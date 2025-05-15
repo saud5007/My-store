@@ -8,10 +8,11 @@ body {
   direction: rtl;
 }
 
-header, footer {
+header {
   text-align: center;
-  padding: 20px;
-  background-color: rgba(255,255,255,0.8);
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid #d4a373;
 }
 
 .products {
@@ -19,6 +20,7 @@ header, footer {
   justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
+  gap: 20px;
 }
 
 .product {
