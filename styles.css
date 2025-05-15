@@ -1,0 +1,51 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f6f1e7 url('https://i.imgur.com/4HJbzEq.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  direction: rtl;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #d4a373;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b88c5a;
+}

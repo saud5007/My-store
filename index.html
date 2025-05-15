@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>S9Tees | متجر التيشيرتات</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>S9Tees</h1>
+    <p>قيد الإنشاء (للعالمية إن شاء الله)</p>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="تيشيرت 1">
+        <h2>تيشيرت كلاسيكي</h2>
+        <p>49 ريال</p>
+        <button onclick="addToCart('تيشيرت كلاسيكي', 49)">أضف للسلة</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="تيشيرت 2">
+        <h2>تيشيرت شبابي</h2>
+        <p>59 ريال</p>
+        <button onclick="addToCart('تيشيرت شبابي', 59)">أضف للسلة</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200" alt="تيشيرت 3">
+        <h2>تيشيرت رياضي</h2>
+        <p>69 ريال</p>
+        <button onclick="addToCart('تيشيرت رياضي', 69)">أضف للسلة</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h3>سلة المشتريات</h3>
+    <ul id="cart"></ul>
+    <p id="total">الإجمالي: 0 ريال</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+	</html>
