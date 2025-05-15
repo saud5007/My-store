@@ -1,21 +1,12 @@
-let cart = [];
-let total = 0;
+let let cartCount = 0;
 
-function addToCart(item, price) {
-  cart.push({ item, price });
-  total += price;
-  updateCart();
-}
+const buttons = document.querySelectorAll("button");
+const cartCounter = document.getElementById("cart-count");
 
-function updateCart() {
-  const cartList = document.getElementById("cart");
-  cartList.innerHTML = "";
-
-  cart.forEach(entry => {
-    const li = document.createElement("li");
-    li.textContent = `${entry.item} - ${entry.price} ريال`;
-    cartList.appendChild(li);
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    cartCount++;
+    cartCounter.textContent = cartCount;
+    alert("تمت إضافة المنتج إلى السلة!");
   });
-
-  document.getElementById("total").textContent = `الإجمالي: ${total} ريال`;
-}
+});
